@@ -1,0 +1,78 @@
+@import "./variables.sass"
+    
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    scroll-behavior: smooth
+
+html
+    font-size: 62.5%
+    overflow-x: hidden
+    
+body
+    background-color: $second-bg-color
+
+.header 
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    padding: 1rem 5%
+    background-color: $bg-color
+    display: flex
+    justify-content: space-between
+    align-items: center
+    z-index: 20
+    .logo 
+        width: 8rem
+        filter: drop-shadow(0 0 2rem $dark-color)
+    nav 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        a
+            font-size: 1.7rem
+            font-weight: bold
+            color: $text-color
+            margin-left: 4rem
+            transition: 0.3s
+            text-decoration: none
+
+section 
+    min-height: 100vh
+    padding: 15rem 5% 2rem   
+    .section_header
+        text-align: center
+        font-size: 5rem
+        font-weight: 700
+        color: $main-color
+        margin-bottom: 8rem
+    .container
+        display: flex
+        justify-content: space-between
+        align-items: center 
+        gap: 4rem
+        .card-box
+            flex: 1 1 20rem
+            background: $main-color
+            padding: 3rem 2rem 4rem
+            border-radius: 2rem
+            text-align: center
+            border: 0.2rem solid $dark-color
+            transition: 0.5s ease
+            img
+                width: 70%
+                height: auto
+            p
+                font-size: 2rem
+                margin-top: 2rem
+            button
+                background-color: $bg-color
+                font-size: 1.3rem
+                font-weight: 700
+                margin-top: 4rem
+                padding: 1rem 3rem
+                color: $text-color
+
+
